@@ -15,8 +15,9 @@ export default function ProfileTab() {
       <Header/>
       <ScrollView>
         <IndexA/>
-       
+        <View className='mt-4'>
         <IndexB/>
+        </View>
         <FinanceCard/>
         <SecurityCard/>
         <FAQCard/>

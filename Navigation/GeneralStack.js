@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TabNavigator from '../Navigation/TabNavigator'
 import IndexCart from "../Components/OrdersComponents/Cart/IndexCart";
 import Checkout from "../Screens/GeneralScreens/Checkout";
+import MenuOrder from "../RestaurantComponents/Menu/MenuOrder";
 
 export default function GeneralStack() {
     const Stack = createNativeStackNavigator();
@@ -11,6 +12,7 @@ export default function GeneralStack() {
        <Stack.Screen name="Tabs" component={TabNavigator}  options={{title: 'Home', headerShown: false}} />
        <Stack.Screen name="Carts" component={IndexCart}  options={{title: 'Carts', headerShown: false, gestureDirection: 'vertical'}} />
        <Stack.Screen name="Checkout" component={Checkout}  options={{title: 'Checkout', headerShown: false, gestureDirection: 'vertical'}} />
+       <Stack.Screen name="MenuItem" component={MenuOrder}  options={{title: 'MenuItem', headerShown: false, gestureDirection: 'vertical'}} />
    </Stack.Navigator>
   )
 }

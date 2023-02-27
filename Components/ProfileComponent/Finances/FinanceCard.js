@@ -8,7 +8,7 @@ export default function FinanceCard() {
     <View className='mt-2'>
         <View className='bg-[#FBFBFB] p-4'>
 
-      <Text style={styles.gilroysemibold} className='text-base'>FINANCES</Text>
+      <Text style={styles.gilroysemibold} className='text-base'>Finances</Text>
         </View>
 
       <View className='mt-0 bg-[#fff] p-2 rounded-md mx-4'>

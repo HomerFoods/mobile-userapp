@@ -59,7 +59,7 @@ export default function UseSplashScreen() {
     return <AppLoading />;
   }
   return (
-    <View onLayout={onLayoutRootView}>
+    <View>
       <GetStarted/>
     </View>
   );

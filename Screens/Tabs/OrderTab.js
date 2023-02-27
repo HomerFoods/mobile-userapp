@@ -1,17 +1,24 @@
-import { View, StyleSheet, ScrollView } from 'react-native'
-import React from 'react'
-import Header from '../../Components/OrdersComponents/Header'
-import ActiveOrders from '../../Components/OrdersComponents/ActiveOrders';
+import { View, StyleSheet, ScrollView, Text } from "react-native";
+import React, { useState } from "react";
+import Header from "../../Components/OrdersComponents/Header";
+import ActiveOrders from "../../Components/OrdersComponents/ActiveOrders";
+import BodyOrders from "../../Components/OrdersComponents/BodyOrders";
 
 export default function OrderTab() {
+  const [selected, setisselected] = useState(0);
+
+  const chooseselected = (selected) => {
+    setisselected(selected);
+  };
+
   return (
     <View style={styles.container}>
-     <Header/>
-     <ScrollView>
-      <ActiveOrders/>
-     </ScrollView>
+      <Header chooseselected={chooseselected} selected={selected} />
+      <ScrollView>
+         <BodyOrders selected={selected}/>
+      </ScrollView>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({

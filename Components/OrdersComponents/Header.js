@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet, SafeAreaView, Image, Pressable } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import bag from "../../assets/Icons/Bag.png";
 import { useNavigation } from "@react-navigation/core";
 
-export default function Header() {
+const Header = ({ chooseselected, selected }) => {
   const navigation = useNavigation();
+
   return (
     <View className='bg-[#FBFBFB]'>
       <SafeAreaView>
@@ -22,11 +23,11 @@ export default function Header() {
           </Pressable>
         </View>
         <View className='flex-row space-x-4 items-center p-4 mt-4 justify-center'>
-           <Pressable className='bg-black rounded-md p-4 w-[45%] flex-row justify-center'>
-             <Text style={styles.gilroymedium} className='text-white'>Active Orders</Text>
+           <Pressable className={`${selected == 0 ? 'bg-black ease-in-out': 'bg-[#eee]'} rounded-md p-4 w-[50%] flex-row justify-center ease-in-out`} onPress={()=>chooseselected(0)}>
+             <Text style={styles.gilroymedium} className={`${selected < 1 ? 'text-white': 'text-[#bdbdbd]'}`}>Active Orders</Text>
            </Pressable>
-           <Pressable className='bg-[#eee] rounded-md p-4 w-[45%] flex-row justify-center'>
-             <Text style={styles.gilroymedium} className='text-[#bdbdbd]'>Completed Orders</Text>
+           <Pressable className={`${selected == 2 ? 'bg-black ease-in-out duration-75' : 'bg-[#eee]'} rounded-md p-4 w-[50%] flex-row justify-center`} onPress={()=>chooseselected(2)}>
+             <Text style={styles.gilroymedium} className={`${selected == 2 ? 'text-white': 'text-[#bdbdbd]'}`}>Completed Orders</Text>
            </Pressable>
         </View>
       </SafeAreaView>
@@ -42,3 +43,5 @@ const styles = StyleSheet.create({
     fontFamily: "GilroySemiBold",
   },
 });
+
+export default Header;

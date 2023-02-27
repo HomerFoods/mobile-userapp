@@ -13,19 +13,19 @@ export default function Index() {
     <View className="mt-1">
       <View className="bg-[#FFF] p-4">
         <Text style={styles.gilroysemibold} className="text-base">
-          ACCOUNT
+          Personal
         </Text>
       </View>
 
       <View className="mt-2 bg-[#fff] p-3 rounded-md mx-4">
         <View className="flex-row justify-between mt-">
           <View className="space-x-3 flex-row items-center">
-            <View className="bg-[#F9F9F9] p-2 rounded-full">
+            <View className="bg-[#fff4d7] p-2 rounded-full">
               <IconShieldCheck size={20} color="#FFC727" />
             </View>
             <Text style={styles.gilroymedium} className='text-sm'>Account Verification</Text>
           </View>
-          <View className="bg-[#F2FFEE] p-2 rounded-lg items-center justify-center">
+          <View className="bg-[#F2FFEE] border border-green-600 p-2 rounded-lg items-center justify-center">
             <Text className="text-green-600" style={styles.gilroymedium}>
               Verified
             </Text>
@@ -36,7 +36,7 @@ export default function Index() {
 
         <View className="flex-row justify-between mt-4 items-center">
         <View className="space-x-3 flex-row items-center">
-          <View className="bg-[#F9F9F9] p-2 rounded-full">
+          <View className="bg-[#fff4d7] p-2 rounded-full">
             <IconMapPin size={20} color="#FFC727" />
           </View>
           <Text style={styles.gilroymedium} className='text-sm'>Change Address</Text>
@@ -48,7 +48,7 @@ export default function Index() {
 
         <View className="flex-row justify-between mt-4 items-center">
           <View className="space-x-3 flex-row items-center">
-            <View className="bg-[#F9F9F9] p-2 rounded-full">
+            <View className="bg-[#fff4d7] p-2 rounded-full">
               <IconBell size={20} color="#FFC727" />
             </View>
             <Text style={styles.gilroymedium} className='text-sm'>Notifications</Text>

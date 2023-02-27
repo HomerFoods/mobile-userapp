@@ -5,9 +5,9 @@ export default function Header() {
   return (
     <View style={styles.appbar}>
       <SafeAreaView>
-        <View className="p-4">
+        <View className="">
           <Text style={styles.gilroysemibold} className="text-xl">
-            Profile
+           
           </Text>
         </View>
       </SafeAreaView>

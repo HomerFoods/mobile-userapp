@@ -4,8 +4,8 @@ import Restaurants from '../../SingleComponents/Restaurants';
 
 export default function FeaturedRestaurants() {
   return (
-    <View className="mt-6 ml-4 pb-2">
-      <Text style={styles.gilroysemibold} className="text-lg mb-4">Featured Restaurants</Text>
+    <View className="mt-4 ml-4 pb-2">
+      <Text style={styles.gilroysemibold} className="text-base mb-3 text-[#212121]">Featured Restaurants</Text>
       <Restaurants/>
     </View>
   )

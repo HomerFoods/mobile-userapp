@@ -1,12 +1,12 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeTab from "../Screens/Tabs/HomeTab";
 import SearchTab from "../Screens/Tabs/SearchTab";
 import OrderTab from "../Screens/Tabs/OrderTab";
 import MessageTab from "../Screens/Tabs/MessageTab";
-import ProfileTab from "../Screens/Tabs/ProfileTab";
 import { IconSmartHome, IconSearch, IconUserCircle, IconShoppingBag, IconBrandHipchat, IconMessage, IconMessageChatbot, IconMessageCircle } from "tabler-icons-react-native";
+import HomeStack from "./HomeStack";
+import AccountStack from "./AccountStack";
 
 export default function TabNavigator() {
   const Tab = createBottomTabNavigator();
@@ -34,7 +34,7 @@ export default function TabNavigator() {
     >
       <Tab.Screen
         name="Home"
-        component={HomeTab}
+        component={HomeStack}
         options={{
           title: "Home",
           headerShown: false,
@@ -78,9 +78,7 @@ export default function TabNavigator() {
         name="Message"
         component={MessageTab}
         options={{
-          title: "Messages",
-          tabBarBadge: 4,
-          tabBarBadgeStyle: {backgroundColor: '#FFC727', color: '#fff' },
+          title: "Support",
           tabBarIcon: ({ color, focused }) => (
             <IconMessageCircle
               size={28}
@@ -91,7 +89,7 @@ export default function TabNavigator() {
       />
       <Tab.Screen
         name="Profile"
-        component={ProfileTab}
+        component={AccountStack}
         options={{
           title: "Account",
           tabBarIcon: ({ color, focused }) => (

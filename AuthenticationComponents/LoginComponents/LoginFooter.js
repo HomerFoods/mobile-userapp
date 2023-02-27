@@ -12,7 +12,7 @@ export default function LoginFooter() {
        </Text>
      </Pressable>
      <Text style={styles.gilroymedium} className='text-[#3e3e3e] mt-6 items-center justify-center flex text-center'>
-        Forgot your password
+        Forgot your password ?
        </Text>
     </View>
   )

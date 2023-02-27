@@ -5,7 +5,7 @@ import { IconArrowRight } from "tabler-icons-react-native";
 
 export default function ActiveOrders() {
   return (
-    <View className="mx-6 mt-16">
+    <View className="mx-6 mt-8">
       <View className="flex-row justify-between items-center">
         <View className="flex-row space-x-3 items-center">
           <View className='bg-[#FFF5DA] rounded-full p-2 items-center justify-center'>

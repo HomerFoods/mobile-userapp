@@ -1,20 +1,22 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/core";
 
 export default function Index() {
+  const navigation = useNavigation();
   return (
-    <View className="px-4 pt-8 bg-[#ffffff] pb-9">
-      <View className="flex-row justify-between items-center">
-        <View className='flex-row space-x-3 items-center'>
-          <View>
-          <Text style={styles.gilroysemibold} className='text-xl'>Adetemi Adelowo Lucid</Text>
-          <View style={styles.box} className='bg-[#fff] p-2 rounded-lg items-center border-[#767676] border mt-2'>
-           <Text className='text-black' style={styles.gilroysemibold}>Edit Profile</Text>
+    <View className="px-4 pt-8 bg-[#FFF8E4] pb-9">
+      <View className="items-center">
+      <View className='bg-[#FFC727] p-4 rounded-lg items-center'>
+           <Text className='text-white text-3xl' style={styles.gilroybold}>AO</Text>
         </View>
-          </View>
+        <View className='justify-center items-center mt-4 flex text-center'>
+          <Text style={styles.gilroysemibold} className='text-base'>Adetemi Adelowo Lucid</Text>
+          <Pressable onPress={() => navigation.navigate("EditAccount")}>
+          <View className='bg-[#fff] p-2 rounded-lg items-center border-[#767676] border mt-2'>
+           <Text className='text-black text-xs' style={styles.gilroysemibold}>Edit Profile</Text>
         </View>
-        <View className='bg-[#FFC727] p-4 rounded-lg items-center'>
-           <Text className='text-white text-xl' style={styles.gilroybold}>AO</Text>
+          </Pressable>
         </View>
       </View>
     </View>

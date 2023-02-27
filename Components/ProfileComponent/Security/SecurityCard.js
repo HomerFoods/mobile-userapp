@@ -8,7 +8,7 @@ export default function SecurityCard() {
     <View className='mt-4'>
         <View className='bg-[#FBFBFB] p-4'>
 
-      <Text style={styles.gilroysemibold} className='text-base'>SECURITY</Text>
+      <Text style={styles.gilroysemibold} className='text-base'>Security</Text>
         </View>
 
       <View className='mt-4 bg-[#fff] p-3 rounded-md mx-4'>
