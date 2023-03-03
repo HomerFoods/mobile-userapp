@@ -9,7 +9,7 @@ export default function GetStarted() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <ImageBackground source={getstarted} className='' style={styles.image} resizeMethod="cover">
+      <ImageBackground source={getstarted} className='' style={styles.image} resizeMethod="scale">
 
       <SafeAreaView className='mt-28'>
        
