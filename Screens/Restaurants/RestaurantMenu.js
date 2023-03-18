@@ -4,6 +4,7 @@ import MenuHeader from '../../RestaurantComponents/Menu/MenuHeader'
 import Menu from '../../RestaurantComponents/Menu/Menu';
 
 export default function RestaurantMenu() {
+
   return (
     <View style={styles.container}>
       <MenuHeader/>

@@ -28,7 +28,7 @@ export default function GetStarted() {
       </Pressable>
       <Pressable
       className='flex items-center justify-center text-center mt-4'
-        onPress={() => navigation.navigate("Register")}
+        onPress={() => navigation.navigate("Login")}
       >
         <View className=' border-[#FFC727] rounded-md border items-center w-[90%] mx-2 p-3'>
         <Text style={styles.gilroymedium} className="text-sm text-[#FFC727]">
